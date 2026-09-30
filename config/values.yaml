@@ -1,4 +1,7 @@
-image: <+artifact.image>
-replicas: <+pipeline.variables.replicas>
 name: <+service.name>
 namespace: <+infra.namespace>
+image: arobertson1234/ci_tutorial_repo:<+pipeline.sequenceId>
+containerPort: 8080
+serviceType: ClusterIP
+servicePort: 80
+replicas: 1
