@@ -1,0 +1,4 @@
+image: <+artifact.image>
+replicas: <+pipeline.variables.replicas>
+name: <+service.name>
+namespace: <+infra.namespace>
